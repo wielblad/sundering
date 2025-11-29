@@ -1093,7 +1093,7 @@ export function HeroShowcase() {
 
       <div className="max-w-[1800px] mx-auto relative">
         {/* Section Header - Forge Your Legend with metallic colors */}
-        <div className="text-center mb-12 md:mb-16 relative">
+        <div className="text-center mb-6 md:mb-8 relative">
           <div className="relative inline-block">
             <div className="inline-flex items-center gap-4 mb-6">
               <div className="w-16 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
@@ -1101,7 +1101,7 @@ export function HeroShowcase() {
               <div className="w-16 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
             </div>
             <h2
-              className="text-5xl md:text-6xl lg:text-8xl font-display font-black tracking-wider mb-4"
+              className="text-3xl md:text-4xl lg:text-5xl font-display font-black tracking-wider mb-4"
               style={{
                 background: 'linear-gradient(180deg, #e5e5e5 0%, #a1a1aa 40%, #71717a 70%, #52525b 100%)',
                 WebkitBackgroundClip: 'text',
@@ -1114,13 +1114,22 @@ export function HeroShowcase() {
             {/* Flying sparks around the title */}
             <ForgeSparks />
           </div>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
+          <p className="text-base text-gray-400 max-w-2xl mx-auto font-light">
             Heroes of myth and might await your command
           </p>
+
+          {/* Keyboard hint */}
+          <div className="text-center mt-4">
+            <p className="text-gray-600 text-xs">
+              Use <kbd className="px-2 py-0.5 bg-white/5 rounded border border-white/10 text-gray-400 mx-1">←</kbd>
+              <kbd className="px-2 py-0.5 bg-white/5 rounded border border-white/10 text-gray-400 mx-1">→</kbd>
+              to navigate
+            </p>
+          </div>
         </div>
 
         {/* Faction Filter - Stone Tablets with muted glows */}
-        <div className="flex justify-center gap-3 md:gap-4 mb-12 flex-wrap">
+        <div className="flex justify-center gap-3 md:gap-4 mb-8 flex-wrap">
           {/* All */}
           <button
             onClick={() => setSelectedFaction('all')}
@@ -1280,15 +1289,6 @@ export function HeroShowcase() {
             currentIndex={currentIndex}
             onSelect={handleSelectIndex}
           />
-        </div>
-
-        {/* Keyboard hint */}
-        <div className="text-center">
-          <p className="text-gray-600 text-xs">
-            Use <kbd className="px-2 py-0.5 bg-white/5 rounded border border-white/10 text-gray-400 mx-1">←</kbd>
-            <kbd className="px-2 py-0.5 bg-white/5 rounded border border-white/10 text-gray-400 mx-1">→</kbd>
-            to navigate
-          </p>
         </div>
 
         {/* Bottom Quote */}
