@@ -58,8 +58,8 @@ export default function AuthPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <h1 className="text-5xl font-display font-bold">
-            <span className="text-gradient-mystical">PUN</span>
-            <span className="text-gradient-human">CH</span>
+            <span className="text-gradient-mystical">SUND</span>
+            <span className="text-gradient-human">ERING</span>
           </h1>
           <p className="text-gray-500 mt-2">Enter the Arena</p>
         </div>

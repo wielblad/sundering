@@ -41,9 +41,6 @@ export default function TargetFrame() {
     return 'bg-red-500';
   };
 
-  const teamColor = selectedTarget.team === 'radiant' ? 'border-green-500' : 'border-red-500';
-  const teamBgColor = selectedTarget.team === 'radiant' ? 'bg-green-500/10' : 'bg-red-500/10';
-
   const teamBorderColor = selectedTarget.team === 'radiant' ? 'border-emerald-500/50' : 'border-red-500/50';
 
   return (
